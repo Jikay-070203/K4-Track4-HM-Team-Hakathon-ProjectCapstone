@@ -236,8 +236,8 @@ class VinFastPCW:
             h, w, _ = frame.shape
             t_start = time.time()
 
-            # YOLO inference (filter person only: class 0)
-            results = self.model.predict(frame, classes=[0], verbose=False, conf=0.45)
+            # YOLO inference (filter person only: class 0, imgsz=320 for 30+ FPS on CPU)
+            results = self.model.predict(frame, classes=[0], imgsz=320, verbose=False, conf=0.45)
             t_infer = time.time()
             self.latency_ms = (t_infer - t_start) * 1000.0
 

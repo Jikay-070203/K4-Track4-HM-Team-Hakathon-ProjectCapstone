@@ -1,0 +1,30 @@
+{
+    "evaluation_metadata": {
+        "source": "recordings/demo_backup.mp4",
+        "total_frames_processed": 1213,
+        "duration_seconds": 37.55,
+        "simulated_car_speed_kmh": 20.0
+    },
+    "system_performance_metrics": {
+        "mean_fps": 32.31,
+        "mean_inference_latency_ms": 23.51,
+        "p95_inference_latency_ms": 29.93,
+        "p99_inference_latency_ms": 37.68,
+        "mean_pipeline_latency_ms": 27.17
+    },
+    "perception_and_geometry_metrics": {
+        "total_detections": 726,
+        "kalman_noise_variance_reduction_pct": 10.66,
+        "corridor_intrusion_frames": 376,
+        "corridor_intrusion_ratio_pct": 31.0
+    },
+    "adas_safety_threat_metrics": {
+        "frames_safe_pct": 18.71,
+        "frames_warning_pct": 1.15,
+        "frames_critical_pct": 29.02,
+        "frames_no_pedestrian_pct": 51.11,
+        "min_ttc_observed_seconds": 0.67,
+        "avg_ttc_observed_seconds": 1.19,
+        "ncap_safety_compliance": "WARNING_BRAKE_LATE"
+    }
+}
